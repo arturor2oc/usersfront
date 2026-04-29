@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/usersfront/' : '/',
   plugins: [vue()],
   resolve: {
     alias: {
